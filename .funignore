@@ -1,0 +1,9 @@
+.DS_Store
+.history
+.vscode/
+code/_cache
+code/_cdn-logs
+code/.idea
+code/code
+code/vendor
+code/db.sqlite3
