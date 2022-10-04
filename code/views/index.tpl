@@ -87,30 +87,30 @@
 
     <h4>Task</h4>
     <ul>
-      <li><a href="/task?last=7&offset=0">/task?last=7&offset=0</a></li>
-      <li><a href="/task?last=14&offset=7">/task?last=14&offset=7</a></li>
-      <li><a href="/task?last=21&offset=14">/task?last=21&offset=14</a></li>
-      <li><a href="/task?last=28&offset=21">/task?last=28&offset=21</a></li>
-      <li><a href="/task?last=35&offset=28">/task?last=35&offset=28</a></li>
+      <li><a target="blank" href="/task?last=7&offset=0">/task?last=7&offset=0</a></li>
+      <li><a target="blank" href="/task?last=14&offset=7">/task?last=14&offset=7</a></li>
+      <li><a target="blank" href="/task?last=21&offset=14">/task?last=21&offset=14</a></li>
+      <li><a target="blank" href="/task?last=28&offset=21">/task?last=28&offset=21</a></li>
+      <li><a target="blank" href="/task?last=35&offset=28">/task?last=35&offset=28</a></li>
     </ul>
 
     <h4>Page404</h4>
     <ul>
-      <li><a href="/page404">/page404</a></li>
-      <li><a href="/page404?group=true">/page404?group=true</a></li>
+      <li><a target="blank" href="/page404">/page404</a></li>
+      <li><a target="blank" href="/page404?group=true">/page404?group=true</a></li>
     </ul>
 
     <h4>Clean All logs in DBs</h4>
     <ul>
       <li>
-        <a href="/page404?cleandb=true">/page404?cleandb=true</a>
+        <a target="blank" href="/page404?cleandb=true">/page404?cleandb=true</a>
       </li>
     </ul>
   </div>
   <footer>
     <div class="author">
       Official website:
-      <a href="http://{{.Website}}">{{.Website}}</a> /
+      <a target="blank" href="http://{{.Website}}">{{.Website}}</a> /
       Contact me:
       <a class="email" href="mailto:{{.Email}}">{{.Email}}</a>
     </div>
