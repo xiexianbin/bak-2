@@ -1,8 +1,8 @@
 # fc-aliyun-cdn-404
 
 [![build-test](https://github.com/xiexianbin/fc-aliyun-cdn-404/actions/workflows/workflow.yaml/badge.svg)](https://github.com/xiexianbin/fc-aliyun-cdn-404/actions/workflows/workflow.yaml)
-[![GoDoc](https://godoc.org/github.com/xiexianbin/fc-aliyun-cdn-404?status.svg)](https://pkg.go.dev/github.com/xiexianbin/fc-aliyun-cdn-404)
-[![Go Report Card](https://goreportcard.com/badge/github.com/xiexianbin/fc-aliyun-cdn-404)](https://goreportcard.com/report/github.com/xiexianbin/fc-aliyun-cdn-404)
+[![GoDoc](https://godoc.org/github.com/xiexianbin/fc-aliyun-cdn-404/code?status.svg)](https://pkg.go.dev/github.com/xiexianbin/fc-aliyun-cdn-404/code)
+[![Go Report Card](https://goreportcard.com/badge/github.com/xiexianbin/fc-aliyun-cdn-404/code)](https://goreportcard.com/report/github.com/xiexianbin/fc-aliyun-cdn-404/code)
 
 parse aliyun cdn 404 request.
 
