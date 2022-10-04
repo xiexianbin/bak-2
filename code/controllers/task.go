@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xiexianbin/aliyun-cdn-404/jobs"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/jobs"
 )
 
 // TaskController operations for Task

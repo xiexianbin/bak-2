@@ -17,8 +17,8 @@ import (
 	"github.com/beego/beego/v2/client/orm"
 	beego "github.com/beego/beego/v2/server/web"
 
-	_ "github.com/xiexianbin/aliyun-cdn-404/models"
-	_ "github.com/xiexianbin/aliyun-cdn-404/routers"
+	_ "github.com/xiexianbin/fc-aliyun-cdn-404/code/models"
+	_ "github.com/xiexianbin/fc-aliyun-cdn-404/code/routers"
 )
 
 func init() {

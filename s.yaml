@@ -56,7 +56,7 @@ services:
         description: 'parse aliyun cdn 404 request by serverless devs'
         handler: index.handler
         runtime: custom
-        timeout: 30
+        timeout: 300
         memorySize: 128
         caPort: 9000
         internetAccess: true

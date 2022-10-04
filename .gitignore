@@ -18,11 +18,13 @@
 .history
 .vscode/
 .s/
+.idea/
 code/.idea
 code/_cache
 code/_cdn-logs
 code/bootstrap
 code/code
+code/conf/app-bak.conf
 code/db.sqlite3
 code/lastupdate.tmp
 code/routers/commentsRouter_*.go

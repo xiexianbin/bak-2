@@ -21,8 +21,9 @@
     }
 
     header,
+    .main,
     footer {
-      width: 960px;
+      width: 1080px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -30,18 +31,18 @@
     .logo {
       background-image: url('https://www.xiexianbin.cn/images/logo/logo-256x256.png');
       background-repeat: no-repeat;
-      -webkit-background-size: 100px 100px;
-      background-size: 100px 100px;
-      background-position: center center;
+      -webkit-background-size: 80px 80px;
+      background-size: 80px 80px;
+      background-position: left;
       text-align: center;
       font-size: 42px;
-      padding: 250px 0 70px;
+      padding: 40px 0;
       font-weight: normal;
       text-shadow: 0px 1px 2px #ddd;
     }
 
     header {
-      padding: 100px 0;
+      padding: 20px 0;
     }
 
     footer {
@@ -51,9 +52,13 @@
       color: #999;
     }
 
-    .description {
-      text-align: center;
+    .main {
+      text-align: left;
       font-size: 16px;
+    }
+
+    h4 {
+      padding-top: 20px;
     }
 
     a {
@@ -75,19 +80,37 @@
 
 <body>
   <header>
-    <h1 class="logo">Welcome to hugo not found</h1>
-    <div class="description">
-      receive https://www.xiexianbin.cn 404 page api call.
-      <ul>
-        <li><a href="/page404?group=true">/page404?group=true</a></li>
-        <li><a href="">/task?last=15&offset=5</a></li>
-      </ul>
-    </div>
+    <h2 class="logo">Welcome to Aliyun CDN 404 Page For hugo</h2>
   </header>
+  <div class="main">
+    <h4>receive https://www.xiexianbin.cn 404 page api call.</h4>
+
+    <h4>Task</h4>
+    <ul>
+      <li><a target="blank" href="/task?last=7&offset=0">/task?last=7&offset=0</a></li>
+      <li><a target="blank" href="/task?last=14&offset=7">/task?last=14&offset=7</a></li>
+      <li><a target="blank" href="/task?last=21&offset=14">/task?last=21&offset=14</a></li>
+      <li><a target="blank" href="/task?last=28&offset=21">/task?last=28&offset=21</a></li>
+      <li><a target="blank" href="/task?last=35&offset=28">/task?last=35&offset=28</a></li>
+    </ul>
+
+    <h4>Page404</h4>
+    <ul>
+      <li><a target="blank" href="/page404">/page404</a></li>
+      <li><a target="blank" href="/page404?group=true">/page404?group=true</a></li>
+    </ul>
+
+    <h4>Clean All logs in DBs</h4>
+    <ul>
+      <li>
+        <a target="blank" href="/page404?cleandb=true">/page404?cleandb=true</a>
+      </li>
+    </ul>
+  </div>
   <footer>
     <div class="author">
       Official website:
-      <a href="http://{{.Website}}">{{.Website}}</a> /
+      <a target="blank" href="http://{{.Website}}">{{.Website}}</a> /
       Contact me:
       <a class="email" href="mailto:{{.Email}}">{{.Email}}</a>
     </div>
