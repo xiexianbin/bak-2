@@ -40,7 +40,7 @@ jobs:
       - name: Check Go Version and Install Go Dep
         run: |
           go version
-          go mod vendor
+          cd code && go mod vendor
 
       - name: Test
         run: cd code && go test ./...
