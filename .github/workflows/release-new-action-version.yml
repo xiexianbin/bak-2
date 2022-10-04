@@ -35,7 +35,7 @@ jobs:
           go mod vendor
 
       - name: Build
-        run: make all
+        run: echo "make all"
 
       - name: Generate Release.txt
         run: |
@@ -49,6 +49,3 @@ jobs:
           files: |
             Release.txt
             LICENSE
-            bin/main-linux
-            bin/main-darwin
-            bin/main-windows

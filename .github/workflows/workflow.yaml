@@ -43,4 +43,4 @@ jobs:
           go mod vendor
 
       - name: Test
-        run: make test && make build
+        run: cd code && go test ./...
