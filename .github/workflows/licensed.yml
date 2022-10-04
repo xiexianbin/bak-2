@@ -28,5 +28,4 @@ jobs:
           sudo tar -xzf licensed.tar.gz
           sudo mv licensed /usr/local/bin/licensed
       - run: |
-          cd code
           licensed status
