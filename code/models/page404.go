@@ -69,7 +69,7 @@ func ListPage404() ([]*Page404, error) {
 	return pages404s, nil
 }
 
-func ListPage404GroupBy(group string) (interface{}, error) {
+func ListPage404GroupBy() (interface{}, error) {
 	o := orm.NewOrm()
 	rawSeter := o.Raw("select url, count(1) as count from page404 group by url order by count desc")
 	var result []orm.Params

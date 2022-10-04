@@ -21,13 +21,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/xiexianbin/aliyun-cdn-404/models"
-	"github.com/xiexianbin/aliyun-cdn-404/utils"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/models"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/utils"
 
 	"github.com/beego/beego/v2/core/logs"
 	beego "github.com/beego/beego/v2/server/web"
 
-	"github.com/xiexianbin/aliyun-cdn-404/aliyun"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/aliyun"
 )
 
 func DoParseCDNLog(day string) error {

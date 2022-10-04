@@ -19,9 +19,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/xiexianbin/aliyun-cdn-404/forms"
-	"github.com/xiexianbin/aliyun-cdn-404/models"
-	"github.com/xiexianbin/aliyun-cdn-404/utils"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/forms"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/models"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/utils"
 )
 
 // Page404Controller operations for Page404
@@ -66,8 +66,11 @@ func (c *Page404Controller) Post() {
 // @Failure 403
 // @router / [get]
 func (c *Page404Controller) GetAll() {
-	group := c.GetString("group", "")
-	if group == "" {
+	cleandb, _ := c.GetBool("cleandb", false)
+	group, _ := c.GetBool("group", false)
+	if cleandb == true {
+		c.Delete()
+	} else if group == false {
 		page404s, err := models.ListPage404()
 		if err != nil {
 			c.Data["json"] = ResponseError(err)
@@ -75,7 +78,7 @@ func (c *Page404Controller) GetAll() {
 			c.Data["json"] = ResponseOK(page404s)
 		}
 	} else {
-		data, err := models.ListPage404GroupBy(group)
+		data, err := models.ListPage404GroupBy()
 		if err != nil {
 			c.Data["json"] = ResponseError(err)
 		} else {

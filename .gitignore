@@ -18,6 +18,7 @@
 .history
 .vscode/
 .s/
+.idea/
 code/.idea
 code/_cache
 code/_cdn-logs

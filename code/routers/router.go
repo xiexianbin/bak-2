@@ -16,7 +16,7 @@ package routers
 import (
 	beego "github.com/beego/beego/v2/server/web"
 
-	"github.com/xiexianbin/aliyun-cdn-404/controllers"
+	"github.com/xiexianbin/fc-aliyun-cdn-404/code/controllers"
 )
 
 func init() {

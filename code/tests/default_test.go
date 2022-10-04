@@ -24,7 +24,7 @@ import (
 	beego "github.com/beego/beego/v2/server/web"
 	. "github.com/smartystreets/goconvey/convey"
 
-	_ "github.com/xiexianbin/aliyun-cdn-404/routers"
+	_ "github.com/xiexianbin/fc-aliyun-cdn-404/code/routers"
 )
 
 func init() {
